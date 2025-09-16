@@ -377,7 +377,7 @@ knowledgeBase.post("/search-ai", zValidator('json', SearchSchema), async (c) => 
       relevantArticles.length === 0 ? 1 : 0
     ).run();
 
-    let response: any = {
+    const response: any = {
       success: true,
       data: {
         found_articles: relevantArticles,

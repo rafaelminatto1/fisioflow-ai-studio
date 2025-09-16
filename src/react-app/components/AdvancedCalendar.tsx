@@ -85,7 +85,7 @@ export function AdvancedCalendar({
   const eventStyleGetter = useCallback((event: CalendarEvent) => {
     let backgroundColor = '#3174ad'
     let borderColor = '#3174ad'
-    let color = 'white'
+    const color = 'white'
 
     // Status colors
     switch (event.status) {

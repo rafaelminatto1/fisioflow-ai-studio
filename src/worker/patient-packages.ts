@@ -228,7 +228,7 @@ patientPackages.put("/packages/:id", zValidator('json', UpdatePackageSchema), as
       UPDATE patient_packages SET
         sessions_used = ?, updated_at = datetime('now')
     `;
-    let params = [data.sessionsUsed];
+    const params = [data.sessionsUsed];
 
     // Auto-complete package if all sessions are used
     const newStatus = data.status || 
