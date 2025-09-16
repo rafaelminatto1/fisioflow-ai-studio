@@ -1,0 +1,7 @@
+
+DROP INDEX idx_financial_transactions_date;
+DROP INDEX idx_financial_transactions_type;
+DROP INDEX idx_financial_transactions_patient_id;
+DROP INDEX idx_financial_transactions_user_id;
+DROP INDEX idx_financial_transactions_clinic_id;
+DROP TABLE financial_transactions;
